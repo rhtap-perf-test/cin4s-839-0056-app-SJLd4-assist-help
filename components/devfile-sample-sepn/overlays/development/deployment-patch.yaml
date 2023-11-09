@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-sepn
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoup_perfscale/cin4s-839-0056-tenant/cin4s-839-0056-app/devfile-sample-sepn@sha256:bd1f829c81608f5bd06828548cfc4ff357169e4e29dbfbfd6dcebc93f38c669c
+        name: my-nodejs
+        resources: {}
+status: {}
